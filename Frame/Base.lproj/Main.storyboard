@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22155" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22131"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Frame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZoO-dN-d5M">
+                                <rect key="frame" x="16" y="783" width="103" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="load video"/>
+                                <connections>
+                                    <action selector="loadVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ieo-V0-E2v"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="seV-ds-hWK">
+                                <rect key="frame" x="164" y="783" width="65" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="PLAY"/>
+                                <connections>
+                                    <action selector="playVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="F9T-Ap-179"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mWB-gk-fGd">
+                                <rect key="frame" x="288" y="783" width="89" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="EXPORT"/>
+                                <connections>
+                                    <action selector="exportVideo:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8fU-yw-HqB"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="s8S-0q-dJ4">
+                                <rect key="frame" x="0.0" y="68" width="393" height="706"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1iW-Xl-KVs">
+                                <rect key="frame" x="0.0" y="59" width="393" height="706"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1iW-Xl-KVs" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="5qH-Mv-VE9"/>
+                            <constraint firstItem="mWB-gk-fGd" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="7ap-ku-xlq"/>
+                            <constraint firstItem="ZoO-dN-d5M" firstAttribute="top" secondItem="1iW-Xl-KVs" secondAttribute="bottom" constant="18" id="CL2-qg-0Hr"/>
+                            <constraint firstItem="seV-ds-hWK" firstAttribute="top" secondItem="1iW-Xl-KVs" secondAttribute="bottom" constant="18" id="KDj-Wr-e97"/>
+                            <constraint firstItem="s8S-0q-dJ4" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="My0-wS-Hbt"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="mWB-gk-fGd" secondAttribute="trailing" constant="16" id="Ne3-Tg-M3Y"/>
+                            <constraint firstItem="1iW-Xl-KVs" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Q5d-f8-OT3"/>
+                            <constraint firstItem="seV-ds-hWK" firstAttribute="leading" secondItem="ZoO-dN-d5M" secondAttribute="trailing" constant="45" id="QEX-WY-Suf"/>
+                            <constraint firstItem="mWB-gk-fGd" firstAttribute="leading" secondItem="seV-ds-hWK" secondAttribute="trailing" constant="59" id="Whu-MF-wF3"/>
+                            <constraint firstItem="ZoO-dN-d5M" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ZBO-0L-KS0"/>
+                            <constraint firstItem="ZoO-dN-d5M" firstAttribute="top" secondItem="1iW-Xl-KVs" secondAttribute="bottom" constant="18" id="ZaB-CN-qUN"/>
+                            <constraint firstItem="ZoO-dN-d5M" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="j4l-oD-o0z"/>
+                            <constraint firstItem="1iW-Xl-KVs" firstAttribute="height" secondItem="s8S-0q-dJ4" secondAttribute="height" id="kgP-ay-STg"/>
+                            <constraint firstItem="s8S-0q-dJ4" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nso-NN-KqE"/>
+                            <constraint firstItem="mWB-gk-fGd" firstAttribute="top" secondItem="1iW-Xl-KVs" secondAttribute="bottom" constant="18" id="pQg-6W-bcm"/>
+                            <constraint firstItem="s8S-0q-dJ4" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="9" id="qHT-2D-DDY"/>
+                            <constraint firstItem="1iW-Xl-KVs" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="qdU-Py-0Da"/>
+                            <constraint firstItem="seV-ds-hWK" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="zng-Bj-f1W"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="convetertedView" destination="1iW-Xl-KVs" id="9P2-8n-DsV"/>
+                        <outlet property="originalView" destination="s8S-0q-dJ4" id="wpb-Rh-Mbm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139.69465648854961" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
